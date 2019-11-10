@@ -1,0 +1,52 @@
+<!-- Resources used:
+    - Bootstrap; for cleanliness in some areas.
+!-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="game.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    </head>
+    <body onload="start()">
+        <div id="wrapper">
+            <div id="game">
+                <div id="title">Memory Game</div>
+                <div id="grid-container-box">
+                    <div id="grid-container">
+                        
+                    </div>
+                </div>
+                
+                <div id="player"></div>
+                <div id="winner" style="display:none">Tie</div>
+            </div>
+            
+            <div id="menu">
+                <div id="scoreboard">
+                    <div class="red-player">Player 1: <span id="player1-score" class="score">0</span></div>
+                    <div class="blue-player">Player 2: <span id="player2-score" class="score">0</span></div>
+                </div>
+                <select id="rules-dropdown">
+                  <option value="">---2 rows---</option>
+                  <option value="6c2r">6 cards</option>
+                  <option value="10c2r">10 cards</option>
+                  <option value="20c2r">20 cards</option>
+                  <option value="">---3 rows---</option>
+                  <option value="12c3r">12 cards (default)</option>
+                  <option value="24c3r">24 cards</option>
+                  <option value="30c3r">30 cards</option>
+                  <option value="">---4 rows---</option>
+                  <option value="20c4r">20 cards</option>
+                  <option value="32c4r">32 cards</option>
+                  <option value="40c4r">40 cards</option>
+                  <option value="52c4r">52 cards</option>
+                </select>
+                <button type="button" id="ng-button" class="btn btn-primary btn-lg ng-button">New Game</button>
+            </div>
+        <div>
+    </body>
+</html>
